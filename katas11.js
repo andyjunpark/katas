@@ -23,7 +23,7 @@ console.log(prismVolume(3, 4, 5) === 60);
 
 const totalVolume = function (solids) {
   let totalVol = 0
-  for (i=0; i < solids.length; i++) {
+  for (let i=0; i < solids.length; i++) {
     if (solids[i].type === 'sphere') {
       totalVol += sphereVolume(solids[i].radius)
     } else if (solids[i].type === 'cone') {
